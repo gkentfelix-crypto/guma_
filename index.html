@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kent Felix Guma | IT Student E-Portfolio</title>
+  <meta name="description" content="E-portfolio of Kent Felix Guma, 1st year Information Technology student in Davao City, Philippines.">
+
+  <link rel="stylesheet" href="Style.css">
+  <script src="Scrip.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#hero" class="logo">Kent<span>.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-btn" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+        <button id="menu-btn" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Kent Felix Guma</h1>
+        <p class="typed-line">1st Year <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+        <p class="hero-text">
+          I'm an Information Technology student at the University of the Immaculate Conception
+          in Davao City, learning to build clean, useful websites one project at a time.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <p>
+            I'm a first-year IT student from Davao City who enjoys turning ideas into working
+            websites. I'm currently building my foundation in web development and growing my
+            skills with every project.
+          </p>
+          <ul class="facts">
+            <li><strong>Location</strong> Davao City, Philippines</li>
+            <li><strong>School</strong> University of the Immaculate Conception</li>
+            <li><strong>Course</strong> Information Technology</li>
+            <li><strong>Focus</strong> Web Development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt reveal">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Responsive Design</span>
+          <span class="chip">Problem Solving</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-tag">HTML · CSS · JS</div>
+            <h3>Web Integration Lab</h3>
+            <p>A demonstration of linking HTML, CSS, and JavaScript together into one working page.</p>
+          </article>
+
+          <article class="card card-soon">
+            <div class="card-tag">Coming soon</div>
+            <h3>Next Project</h3>
+            <p>More projects will be added here as I learn and build.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt reveal">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <ol class="timeline">
+          <li>
+            <span class="year">2026 – Present</span>
+            <h3>University of the Immaculate Conception</h3>
+            <p>Information Technology</p>
+          </li>
+          <li>
+            <span class="year">2020 – 2026</span>
+            <h3>Davao City National High School</h3>
+            <p>Secondary Education</p>
+          </li>
+          <li>
+            <span class="year">2014 – 2020</span>
+            <h3>San Roque Central Elementary School</h3>
+            <p>Elementary Education</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="container narrow">
+        <h2 class="section-title">Contact</h2>
+        <p class="center">Have a question or want to work together? Send me a message.</p>
+
+        <form id="contact-form" class="form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+          <button type="submit" id="contact-btn" class="btn btn-primary">Send Message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="center small">Or email me directly at
+          <a href="mailto:gkentfelix@gmail.com">gkentfelix@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Kent Felix Guma. All Rights Reserved.</p>
+  </footer>
+
+  <button id="top-btn" class="top-btn" aria-label="Back to top">↑</button>
+
+</body>
+</html>
